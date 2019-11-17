@@ -11,5 +11,4 @@ public class ShirtShopProjectApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ShirtShopProjectApplication.class, args);
 	}
-
 }
