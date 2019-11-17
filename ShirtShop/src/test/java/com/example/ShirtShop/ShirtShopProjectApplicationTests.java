@@ -8,6 +8,7 @@ class ShirtShopProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
