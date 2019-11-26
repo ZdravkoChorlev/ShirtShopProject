@@ -1,12 +1,13 @@
 .Main {
   width: 100%;
   height: 100%;
-  background-color:#fffff0;
+  background-color:#fff;
   // border:1px solid red;
 }
 div{
-  h1{
+  .landingMessage{
     color: #454545;
     margin: 1em;
+    font-weight:lighter;
   }
 }

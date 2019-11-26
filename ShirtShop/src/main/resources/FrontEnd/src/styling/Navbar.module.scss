@@ -1,0 +1,43 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "variables";
+
+nav .navbar {
+  background-color: red;
+  border: 2px solid green;
+}
+.loginSignupContainer {
+  width: 9em;
+}
+.login {
+  color: $main-blue !important;
+  margin-right: 1em;
+}
+.signUp {
+  background-color: $main-blue !important;
+  border-radius: 0 !important;
+  border: 1px solid #454545 !important;
+}
+.top {
+  background-color: #454545 !important;
+  height: 0.2em !important;
+  margin-bottom:0.2em;
+}
+.middle {
+  background-color: #454545 !important;
+  height: 0.2em !important;
+  margin-bottom:0.2em;
+}
+.bottom {
+  background-color: #454545 !important;
+  height: 0.2em !important;
+  margin-bottom:0.2em;
+}
+ul{
+  li{
+    text-align:center;
+    font-weight:bold;
+    a{
+      color: $main-blue;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "variables";
+
+@mixin shirtColor($background) {
+    width:1em;
+    height:1em;
+    border: 2px solid $border;
+    background-color: $background;
+    margin:0.2em;
+}

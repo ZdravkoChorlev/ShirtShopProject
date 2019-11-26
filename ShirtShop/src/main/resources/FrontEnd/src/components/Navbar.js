@@ -1,30 +1,63 @@
-import React from 'react'
-import '../styling/Navbar.scss'
+import React from "react";
+import s from "../styling/Navbar.module.scss";
 function Navbar() {
-    return (
-        <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    )
+  return (
+    <nav className="navbar navbar-expand-lg container">
+      <a className={`navbar-brand ${s.logoContainer}`} href="#">
+        Navbar
+      </a>
+      <button
+        className={`navbar-toggler ${s.toggler}`}
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <div className={`${s.burgerIcon} d-flex flex-column`}>
+          <span className={`navbar-toggler-icon ${s.top}`}></span>
+          <span className={`navbar-toggler-icon ${s.middle}`}></span>
+          <span className={`navbar-toggler-icon ${s.bottom}`}></span>
+        </div>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <a className="nav-link asd" href="#">
+              Home <span className="sr-only">(current)</span>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              Features
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              Pricing
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              className="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+            >
+              Disabled
+            </a>
+          </li>
+        </ul>
+        <div className={s.loginSignupContainer}>
+          <span className={s.login}>Login</span>
+          <button type="button" className={`btn ${s.signUp}`}>
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

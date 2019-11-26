@@ -1,0 +1,53 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "variables";
+@import "mixin";
+
+main {
+  width: 40em;
+  height: 35em;
+  -webkit-box-shadow: 0 0px 8px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow:0 0px 8px 1px rgba(0,0,0,0.2);
+       box-shadow: 0 0px 8px 1px rgba(0,0,0,0.2);
+
+}
+.shirt {
+  width: 16em;
+  height: 21em;
+  margin-bottom: 1em;
+  background-color: #fff;
+}
+.configContainer {
+  padding: 1em;
+}
+.uploadedImageContainer {
+  border: 1px solid $border;
+  width: 8em;
+  height: 8em;
+}
+.colorContainer {
+  margin: 1em 0;
+  .blackShirt {
+    @include shirtColor(#000);
+  }
+  .blueShirt {
+    @include shirtColor(#0594ed);
+  }
+  .redShirt {
+    @include shirtColor(#ff4a4a);
+  }
+  .grayShirt {
+    @include shirtColor(#c4c4c4);
+  }
+  .whiteShirt {
+    @include shirtColor(#fff);
+  }
+}
+div{
+  .sizeDropDown {
+    padding: 0 1em;
+    background-color:#ffffff;
+  }
+  .sizeDropDown:hover{
+      
+  }
+}
