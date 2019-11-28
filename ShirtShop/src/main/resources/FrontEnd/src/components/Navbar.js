@@ -67,27 +67,32 @@ function Navbar() {
         </ul>
         <div className={s.loginSignupContainer}>
           <span className={s.login}>Login</span>
-          <button
-            type="button"
-            className={`btn ${s.signUp}`}
-            data-toggle="modal"
-            data-target="#exampleModalCenter"
-          >
-            Sign Up
-          </button>
-          <Button variant="primary" onClick={handleShow}>
-            Launch demo modal
+          <Button variant="primary" type="button" className={`btn ${s.signUp}`} onClick={handleShow}>
+            Sign up
           </Button>
           <Modal isOpen={isOpen}>
-            <h1>adadsadasd</h1>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
+            <form>
+              <div className="form-row">
+                <div className="col">
+                  <input type="text" className="form-control" placeholder="First name"/>
+                </div>
+                  <div className="col">
+                    <input type="text" className="form-control" placeholder="Last name"/>
+                  </div>
+                  <div className="col">
+                    <input type="password" placeholder="Enter password"/>
+                  </div>
+                  </div>
+                  <button className={`btn btn-success`} type="submit">Submit</button>
+                </form>
+                <Button variant="primary" onClick={handleClose}>
+                  Save Changes
             </Button>
           </Modal>
         </div>
       </div>
     </nav>
-  );
-}
-
-export default Navbar;
+        );
+      }
+      
+      export default Navbar;
